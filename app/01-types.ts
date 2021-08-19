@@ -46,3 +46,25 @@ function sayHelloToAll() : void {
     console.log("Hello to all!")
 }
 
+let undefinedVariable: undefined = undefined;
+let nullVariable: null = null;
+
+let usernameAndId: [number, string];
+usernameAndId = [1, 'kennisreally40'];
+
+enum WeaponType { Sword, Saber, Spear };
+let weapon: WeaponType = WeaponType.Sword
+
+enum CardType { Ace=1, Two, Three, Four };
+let cardType: string = CardType[2];
+console.log(cardType);
+
+let x: number | string;
+let y: number | null;
+
+x = '1234';
+x = 1234;
+
+// x = true;
+// y = false;
+
