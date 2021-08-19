@@ -24,4 +24,18 @@ function boolean(username, password) {
     return result;
 }
 console.log(boolean("11-50", "Letmein1234!"));
+function addNumbersWithOptional(numOne, numTwo, someString) {
+    console.log(someString);
+    return numTwo + numTwo;
+}
+addNumbersWithOptional(1, 2);
+addNumbersWithOptional(1, 2, "This is optional");
+function threeStrings(fname, lname, mname) {
+    if (mname = undefined) {
+        return fname.concat(lname);
+    }
+    else
+        return fname.concat(mname, lname);
+}
+console.log(threeStrings("bradley", "titus", "lincoln"));
 //# sourceMappingURL=02-functions.js.map
