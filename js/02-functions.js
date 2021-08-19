@@ -31,11 +31,11 @@ function addNumbersWithOptional(numOne, numTwo, someString) {
 addNumbersWithOptional(1, 2);
 addNumbersWithOptional(1, 2, "This is optional");
 function threeStrings(fname, lname, mname) {
-    if (mname = undefined) {
-        return fname.concat(lname);
+    if (mname) {
+        return fname.concat(mname, lname);
     }
     else
-        return fname.concat(mname, lname);
+        return fname.concat(lname);
 }
 console.log(threeStrings("bradley", "titus", "lincoln"));
 //# sourceMappingURL=02-functions.js.map

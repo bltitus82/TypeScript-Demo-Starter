@@ -51,9 +51,9 @@ addNumbersWithOptional(1, 2);
 addNumbersWithOptional(1, 2, "This is optional");
 
 function threeStrings(fname: string, lname: string, mname?: string){
-    if (mname = undefined) {
-        return fname.concat(lname);
-    } else return fname.concat(mname, lname);
+    if (mname) {
+        return fname.concat(mname, lname);
+    } else return fname.concat(lname);
 }
 
 console.log(threeStrings("bradley", "titus", "lincoln"));
