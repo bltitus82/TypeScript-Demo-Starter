@@ -42,3 +42,28 @@ class Game {
 
 let battleship: Game = new Game('Battleship', 'Hasbro');
 
+class Vehicle {
+    type: string;
+    make: string;
+    model: string;
+    manufactureYear: number;
+    runs: boolean;
+    topSpeed: number;
+}
+
+class Automobile extends Vehicle {
+    isSelfDriving: boolean;
+}
+
+let myCar: Automobile = new Automobile();
+myCar.isSelfDriving = false;
+myCar.topSpeed = 200;
+myCar.make = "Volvo";
+
+class Motorcycle extends Vehicle {
+    easyToDoWheelie: boolean;
+}
+
+let myMotorcycle: Motorcycle = new Motorcycle();
+myMotorcycle.easyToDoWheelie = true;
+myMotorcycle.topSpeed = 180;
