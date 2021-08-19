@@ -67,3 +67,15 @@ class Motorcycle extends Vehicle {
 let myMotorcycle: Motorcycle = new Motorcycle();
 myMotorcycle.easyToDoWheelie = true;
 myMotorcycle.topSpeed = 180;
+
+
+class Store {
+    constructor(public name: string, public city: string){
+        this.name = name;
+        this.city = city;
+    }
+    // name: string;
+    // city: string;
+}
+
+let ikea: Store = new Store('Ikea', 'Fishers');

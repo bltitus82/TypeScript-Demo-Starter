@@ -69,4 +69,14 @@ var Motorcycle = /** @class */ (function (_super) {
 var myMotorcycle = new Motorcycle();
 myMotorcycle.easyToDoWheelie = true;
 myMotorcycle.topSpeed = 180;
+var Store = /** @class */ (function () {
+    function Store(name, city) {
+        this.name = name;
+        this.city = city;
+        this.name = name;
+        this.city = city;
+    }
+    return Store;
+}());
+var ikea = new Store('Ikea', 'Fishers');
 //# sourceMappingURL=03-classes.js.map
