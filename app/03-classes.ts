@@ -30,3 +30,15 @@ sheriff.firstName = "Sheriff";
 sheriff.lastName = "Holler";
 
 sheriff.sayHelloToFullName();
+
+class Game {
+    constructor(name: string, maker: string){
+        this.gameName = name;
+        this.gameMaker = maker;
+    }
+    gameName: string;
+    gameMaker: string;
+}
+
+let battleship: Game = new Game('Battleship', 'Hasbro');
+

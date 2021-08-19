@@ -20,4 +20,12 @@ var sheriff = new Person();
 sheriff.firstName = "Sheriff";
 sheriff.lastName = "Holler";
 sheriff.sayHelloToFullName();
+var Game = /** @class */ (function () {
+    function Game(name, maker) {
+        this.gameName = name;
+        this.gameMaker = maker;
+    }
+    return Game;
+}());
+var battleship = new Game('Battleship', 'Hasbro');
 //# sourceMappingURL=03-classes.js.map
