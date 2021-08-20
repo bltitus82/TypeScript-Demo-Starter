@@ -79,3 +79,26 @@ class Store {
 }
 
 let ikea: Store = new Store('Ikea', 'Fishers');
+
+
+
+
+
+
+class Employee extends Person{
+    private _salary: number;
+
+    getSalary(): string {
+        return this._salary.toString();
+    }
+
+    setSalary(newSalary: number) {
+        this._salary = newSalary;
+    }
+}
+
+let newEmployee: Employee = new Employee();
+newEmployee.setSalary(30000);
+
+let salaryResult: string = newEmployee.getSalary();
+console.log("Your salary is:", salaryResult);
